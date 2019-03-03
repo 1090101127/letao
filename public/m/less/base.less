@@ -28,7 +28,7 @@ img{
 #header{
     display: flex;
     background-color: @main-color;
-    color: #fff;
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -37,6 +37,13 @@ img{
     .left{
         width: .45rem;
         height:.45rem;
+
+        a{
+            display: block;
+            text-align: center;
+            line-height: .45rem;
+            color:#fff;
+        }
     }
     .center{
         flex:1;
@@ -45,6 +52,20 @@ img{
              // MUI的h4自带了行高
              line-height: .45rem;
              font-weight: normal;
+             color:#fff;
+        }
+
+        form{
+            padding: .05rem;
+
+            input{
+                background-color: #fff;
+                height: .35rem;
+                margin-bottom: 0;
+                color:#000;
+                text-align: left;
+                font-style: .14rem;
+            }
         }
     }
     .right{
@@ -52,14 +73,17 @@ img{
        height:.45rem;
        text-align: center;
        line-height: .45rem;
+       a{
+           color:#fff;
+       }
     }
 }
 
 /* 中间的主体区域的样式 这个每个页面都要放到公共样式中 */
 #main{
-    padding: 45px 0;
+    padding: .45rem 0;
     height: 100vh;
-    position: relative;
+    // position: relative;
 
      // MUI的区域滚动样式修改  把容器绝对定位改成相对定位 设置高度和main内容一样
      .mui-scroll-wrapper{
@@ -68,6 +92,16 @@ img{
            // 把这个区域滚动的盒子高度设置为100% 和main的内容一样
            height: 100%;    
      }
+ 
+      // swiper的内容滚动样式修改 给父容器高度固定100% 子容器高度auto
+      .swiper-container{
+          height: 100%;
+
+           // 子容器的高度 为auto
+           .swiper-slide{
+               height: auto;
+           }
+      }
 
 
 }

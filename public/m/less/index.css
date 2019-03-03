@@ -46,11 +46,16 @@ img {
 #main {
   padding: 45px 0;
   height: 100vh;
-  position: relative;
 }
 #main .mui-scroll-wrapper {
   position: relative;
   height: 100%;
+}
+#main .swiper-container {
+  height: 100%;
+}
+#main .swiper-container .swiper-slide {
+  height: auto;
 }
 /* 底部区域 */
 #footer {

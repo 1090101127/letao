@@ -99,3 +99,29 @@ img {
 #footer a.active {
   color: orange;
 }
+/* 分类页面的主体样式 */
+#main {
+  display: flex;
+  background-color: #ccc;
+}
+#main .category-left {
+  width: .8rem;
+}
+#main .category-left ul li.active {
+  background-color: #ccc;
+}
+#main .category-left ul .mui-table-view-cell:after {
+  left: 0;
+}
+#main .category-right {
+  flex: 1;
+  padding: .1rem;
+}
+#main .category-right a {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+}
+#main .category-right a img {
+  width: 100%;
+}

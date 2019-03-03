@@ -1,0 +1,33 @@
+@import "base.less";
+/* 分类页面的主体样式 */
+#main{
+    display: flex;
+    background-color: #ccc;
+    .category-left{
+        width: .8rem;
+        ul{
+            li{
+                &.active{
+                    background-color: #ccc;
+                }
+            }
+            .mui-table-view-cell:after{
+                left: 0;
+            }
+
+        }
+    }
+
+    .category-right{
+        flex: 1;
+        padding: .1rem;
+        a{
+            display: block;
+            text-align: center;
+            background-color: #fff;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
