@@ -122,37 +122,30 @@ img {
   border-color: #006699;
   border-radius: 0 .06rem .06rem 0;
 }
-/* 主体区域 */
-#main {
-  /* 导航区域 */
-  /* 广告区域 */
-  /* 品牌专区 运动专区 女士 男士专区 使用并集选择器*/
+/* 详情的主体样式 */
+#main #detail-list .product-price span {
+  color: red;
+  font-weight: 600;
 }
-#main a {
-  display: block;
+#main #detail-list .product-price del {
+  color: #ccc;
 }
-#main a img {
+#main #detail-list .product-size {
+  line-height: .33rem;
+}
+#main #detail-list .product-size span .mui-btn {
+  margin-bottom: .05rem;
+}
+#footer {
+  background-color: #ccc;
+}
+#footer .fa-shopping-cart {
+  font-size: .2rem;
+  color: #666;
+}
+#footer .mui-row > .mui-col-xs-5 {
+  padding: .06rem .05rem;
+}
+#footer .mui-row > .mui-col-xs-5 button {
   width: 100%;
-}
-#main .nav {
-  padding: .1rem;
-}
-#main .banner {
-  padding: 0 .1rem;
-}
-#main .banner .left a {
-  display: flex;
-}
-#main .banner .left a img {
-  width: 50%;
-  height: 1.2rem;
-}
-#main .banner .right a img {
-  height: 2.4rem;
-}
-#main .brand,
-#main .sport,
-#main .women,
-#main .man {
-  padding: .1rem;
 }

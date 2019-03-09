@@ -66,6 +66,7 @@ img {
 #main {
   padding: .45rem 0;
   height: 100vh;
+  position: relative;
 }
 #main .mui-scroll-wrapper {
   position: relative;
@@ -122,37 +123,16 @@ img {
   border-color: #006699;
   border-radius: 0 .06rem .06rem 0;
 }
-/* 主体区域 */
-#main {
-  /* 导航区域 */
-  /* 广告区域 */
-  /* 品牌专区 运动专区 女士 男士专区 使用并集选择器*/
+#main .btn-get-vcode {
+  position: absolute;
+  right: 0;
+  width: auto;
+  height: 40px;
 }
-#main a {
-  display: block;
+#main .mui-button-row {
+  padding: .1rem;
+  height: auto;
 }
-#main a img {
+#main .btn-register {
   width: 100%;
-}
-#main .nav {
-  padding: .1rem;
-}
-#main .banner {
-  padding: 0 .1rem;
-}
-#main .banner .left a {
-  display: flex;
-}
-#main .banner .left a img {
-  width: 50%;
-  height: 1.2rem;
-}
-#main .banner .right a img {
-  height: 2.4rem;
-}
-#main .brand,
-#main .sport,
-#main .women,
-#main .man {
-  padding: .1rem;
 }

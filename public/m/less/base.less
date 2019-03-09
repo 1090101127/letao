@@ -83,7 +83,7 @@ img{
 #main{
     padding: .45rem 0;
     height: 100vh;
-    // position: relative;
+    position: relative;
 
      // MUI的区域滚动样式修改  把容器绝对定位改成相对定位 设置高度和main内容一样
      .mui-scroll-wrapper{
@@ -129,6 +129,33 @@ img{
 
         &.active{
             color: orange;
+        }
+    }
+}
+
+  /* 搜索表单样式 */
+  .search-form{
+    padding: .1rem;
+
+    form{
+        display: flex;
+
+        input{
+            flex:1;
+            height: .36rem;
+            border:1px solid @main-color;
+            background-color: #fff;
+            text-align: left;
+            font-size: .14rem;
+            border-radius: .06rem 0 0 .06rem;
+        }
+
+        button{
+            width: .6rem;
+            height: .36rem;
+            background-color: @main-color;
+            border-color: @main-color;
+            border-radius: 0 .06rem .06rem 0;
         }
     }
 }

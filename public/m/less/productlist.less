@@ -1,0 +1,51 @@
+@import "base.less";
+
+/* 商品列表的主体样式 */
+#main {
+    .product-list {
+
+        // 卡片标题
+        .mui-card-header {
+            a {
+                font-size: .14rem;
+                color: #666;
+                text-align: center;
+
+                &.active {
+                    color: red;
+                }
+            }
+        }
+
+        // 卡片内容
+        .mui-card-content {
+            .mui-col-xs-6 {
+                // 所有盒子下面有阴影
+                box-shadow: 0 1px 0 #ccc;
+
+                &:nth-child(odd) {
+                    // 右边的盒子左边和下面都要阴影
+                    box-shadow: 1px 1px 0 #ccc;
+                }
+
+            }
+
+            .product {
+                text-align: center;
+                padding: .1rem .05rem;
+
+                .product-img {
+                    width: 100%;
+                }
+
+                .product-name {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;//表示显示的行数。
+                }
+            }
+        }
+    }
+}

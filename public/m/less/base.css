@@ -66,6 +66,7 @@ img {
 #main {
   padding: .45rem 0;
   height: 100vh;
+  position: relative;
 }
 #main .mui-scroll-wrapper {
   position: relative;
@@ -98,4 +99,27 @@ img {
 }
 #footer a.active {
   color: orange;
+}
+/* 搜索表单样式 */
+.search-form {
+  padding: .1rem;
+}
+.search-form form {
+  display: flex;
+}
+.search-form form input {
+  flex: 1;
+  height: .36rem;
+  border: 1px solid #006699;
+  background-color: #fff;
+  text-align: left;
+  font-size: .14rem;
+  border-radius: .06rem 0 0 .06rem;
+}
+.search-form form button {
+  width: .6rem;
+  height: .36rem;
+  background-color: #006699;
+  border-color: #006699;
+  border-radius: 0 .06rem .06rem 0;
 }
